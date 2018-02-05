@@ -3,7 +3,6 @@
     
 <!-- CHALLENGE 1 ----------------------------------------------------------------- -->
 
-
 <?php
     
         /* Step 1. Define the change due in cents, and create a variable for each denomination of change
@@ -59,12 +58,7 @@
     
         /* Step 7. Print out, "Your change is: X dollar(s), X quarter(s), X dime(s), X nickel(s), and X cent(s)."
         */
-
-        echo "Your change is: $dollars dollars, $quarters quarters, $dimes dimes, $nickels nickel, and $pennies cents."
+        echo "Your change is: $dollars dollars, $quarters quarters, $dimes dimes, $nickels nickels, and $pennies cents."
 ?>
-   
-   
-<!-- CHALLENGE 2 ----------------------------------------------------------------- -->
-<?php
 </body>
 </html>
