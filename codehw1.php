@@ -1,6 +1,11 @@
 <html>
 <body>
-    
+
+<h1>Homework 1</h1>
+    <h3>Challenge 1</h3>
+    <h4>Correct Change <i>totalling $2.87</i></h4>
+
+<p>
 <!-- CHALLENGE 1 ----------------------------------------------------------------- -->
 
 <?php
@@ -60,5 +65,28 @@
         */
         echo "Your change is: $dollars dollars, $quarters quarters, $dimes dimes, $nickels nickels, and $pennies cents."
 ?>
+    </p>
+
+
+<h3>Challenge 2a</h3>
+<h4>99 Bottles of Beer</h4>
+<!-- CHALLENGE 2a ----------------------------------------------------------------- -->
+    
+<?php
+        /* Step 1. Establish variables.
+        */
+        
+        for ($bottles = 99; $bottles > 0; -- $bottles)
+        {
+            $subbottles = $bottles-1;
+            echo "$bottles bottles of beer on the wall, $bottles bottles of beer.<br>";
+            echo "Take one down, pass it around, $subbottles bottles of beer on the wall.<p>";
+        }
+    
+    
+?>
+
+    
+    
 </body>
 </html>
