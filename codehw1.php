@@ -3,12 +3,16 @@
 <head>
 <meta charset="utf-8" />
 <title>Code Homework 1</title>
-<link rel="stylesheet" type="text/css" href="style-hw1.css" />
+
+<?php
+    echo "<link rel='stylesheet' type='text/css' href='style-hw1.css' />";
+?>
+ 
+    
 </head>
 
 <body>
 
-<div class='body'> 
 <h1>Code Homework 1</h1>
     <h3>Challenge 1</h3>
     <h4>Correct Change <i>totalling $2.37</i></h4>
