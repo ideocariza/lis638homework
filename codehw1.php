@@ -71,22 +71,75 @@
 <h3>Challenge 2a</h3>
 <h4>99 Bottles of Beer</h4>
 <!-- CHALLENGE 2a ----------------------------------------------------------------- -->
-    
+<p> 
 <?php
-        /* Step 1. Establish variables.
+        /* Initially I did this as a while loop, but couldn't figure out how to make $subbottles = $bottles -- 1 for each iteration. Original while loop:
+        
+        while ($bottles > 0) {
+            echo "$bottles bottles of beer on the wall, $bottles bottles of beer.<br>"
+            $bottles -= 1;
+            echo "Take one down, pass it around, GOT STUCK HERE
+            
+        }
         */
         
-        for ($bottles = 99; $bottles > 0; -- $bottles)
-        {
+        for ($bottles = 99; $bottles > 0; -- $bottles) 
+        { 
             $subbottles = $bottles-1;
-            echo "$bottles bottles of beer on the wall, $bottles bottles of beer.<br>";
-            echo "Take one down, pass it around, $subbottles bottles of beer on the wall.<p>";
+            
+            if ($bottles == 2) 
+            {
+                echo "$bottles bottles of beer on the wall, $bottles bottles of beer!<br>";
+                echo "Take one down, pass it around, $subbottles bottle of beer on the wall!<p>";
+            }
+            
+            elseif ($bottles == 1)
+            {    
+                echo "$bottles bottle of beer on the wall, $bottles bottle of beer!<br>";
+                echo "Take one down, pass it around, $subbottles bottles of beer on the wall!<p>";
+            }
+            
+            else
+            {
+            echo "$bottles bottles of beer on the wall, $bottles bottles of beer!<br>";
+            echo "Take one down, pass it around, $subbottles bottles of beer on the wall!<p>";
+            }
         }
-    
-    
-?>
 
+?>
+</p>
+
+
+<h3>Challenge 2b</h3>
+<h4>99 Bottles of Beer <i>with any starting number of beers possible</i></h4>
+
+
+<!-- CHALLENGE 2b ----------------------------------------------------------------- -->
     
+<?php
+        for ($bottles = 4; $bottles > 0; -- $bottles) 
+        { 
+            $subbottles = $bottles-1;
+            
+            if ($bottles == 2) 
+            {
+                echo "$bottles bottles of beer on the wall, $bottles bottles of beer!<br>";
+                echo "Take one down, pass it around, $subbottles bottle of beer on the wall!<p>";
+            }
+            
+            elseif ($bottles == 1)
+            {    
+                echo "$bottles bottle of beer on the wall, $bottles bottle of beer!<br>";
+                echo "Take one down, pass it around, $subbottles bottles of beer on the wall!<p>";
+            }
+            
+            else
+            {
+            echo "$bottles bottles of beer on the wall, $bottles bottles of beer!<br>";
+            echo "Take one down, pass it around, $subbottles bottles of beer on the wall!<p>";
+            }
+        }    
+?>
     
 </body>
 </html>
