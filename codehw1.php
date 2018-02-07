@@ -3,7 +3,12 @@
 <head>
 <meta charset="utf-8" />
 <title>Code Homework 1</title>
-<link rel="stylesheet" type="text/css" href="style-hw1.css" />
+
+<?php
+    echo "<link rel='stylesheet' type='text/css' href='style-hw1.css' />";
+?>
+ 
+    
 </head>
 
 <body>
