@@ -37,7 +37,12 @@
 
 // Define ISBN variable
 
-$isbn = "0747532699";
+
+
+
+
+function isbn_validator ($isbn)
+{
 
 
 // Create an array that equals the result of str_splitting the ISBN variable
@@ -93,14 +98,34 @@ for ($i=0; $i<10; $i++)
 3. if $totalSum has remainder, FALSE
 */
 
-if ($totalSum % 11 == 0);
+if ($totalSum % 11 == 0)
 {
-    echo "Number $isbn is a valid ISBN code.";
+    echo "Number $isbn is a valid ISBN code.<p>";
+}
+    else
+    {
+        echo "Number $isbn is invalid.<p>";
+    }
+
+
 
 }
 
 
+$isbn = "0747532699";
+
+isbn_validator($isbn);
+
+
+$isbn = "2345398237";
+
+isbn_validator($isbn);
+
+echo "$isbn";
+
 ?>
+
+
 </p>
 
 
