@@ -164,24 +164,60 @@ function coin_toss ($flips)
 }
 
 
-coin_toss (3);
+coin_toss (1);
 
 
 ?>
 
-<!--CHALLENGE 2A --------------------------------------------------
+
+
+
+
+<!--CHALLENGE 2A ---------------------------------------------------->
 
 <h4>A. 1, 3, 7, and 9 Flips.</i></h4>
 <p> 
 
 <?php
-        
+
+function coin_toss ($flips)
+{
+    for ($i=1; $i<=$flips; $i++)
+    {
+        $face1= mt_rand (0,1);
+        $face2= mt_rand (0,1);
+
+
+        if ($face1 == 0)
+        {
+            echo "Heads";
+            //echo '<img src="img\/hw2\/heads.png\/">';
+        }
+        else
+        {
+            echo "Tails";
+            //echo '<img src="img\/hw2\/tails.png\/">';
+        }
+
+
+        while ($face1 == 0 && $face2 == 0)
+        {
+            echo "Heads";
+            //'<img src="img\/hw2\/heads.png\/">';
+
+            
+        }
+
+    }  
+}
+
+
 
 ?>
 </p>
 
 
-CHALLENGE 2b ----------------------------------------------
+<!--CHALLENGE 2b ----------------------------------------------
 
 <h4>B. Toss Until Two Heads In a Row</i></h4>
 <p>
