@@ -4,14 +4,24 @@
 <meta charset="utf-8" />
 <title>Code Homework 1</title>
 
-<?php
-    echo "<link rel='stylesheet' type='text/css' href='style-hw1.css' />";
-?>
- 
+<link rel='stylesheet' type='text/css' href='style.css' /> 
     
 </head>
 
 <body>
+
+<div class="topalign">
+<nav>
+<header><h1>LIS-638: Web Development</h1></header>
+    <ul>
+    <li><a href="index.html">About LIS-638</a></li>
+    <li class="selected"><a href="codehw1.php">Homework 1</a></li>
+    <li><a href="codehw2.php">Homework 2</a></li>
+    </ul>
+</nav>
+    </div>
+
+<div class="content">
 
 <h1>Code Homework 1</h1>
     <h3>Challenge 1</h3>
@@ -233,6 +243,8 @@
             }
         }    
 ?>
-    
+
+</div>
+
 </body>
 </html>

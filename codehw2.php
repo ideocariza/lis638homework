@@ -4,20 +4,31 @@
 <meta charset="utf-8" />
 <title>Code Homework 1</title>
 
-<?php
-    echo "<link rel='stylesheet' type='text/css' href='style-hw1.css' />";
-?>
- 
+<link rel='stylesheet' type='text/css' href='style.css' />
     
 </head>
 
 <body>
+
+<div class="topalign">
+<nav>
+<header><h1>LIS-638: Web Development</h1></header>
+    <ul>
+    <li><a href="index.html">About LIS-638</a></li>
+    <li><a href="codehw1.php">Homework 1</a></li>
+    <li class="selected"><a>Homework 2</a></li>
+    </ul>
+</nav>
+    </div>
+
+<div class="content">
 
 <h1>Code Homework 2</h1>
 
 
 
 <!-- CHALLENGE 1 -------------------------------------------------- -->
+
 
     <h3>Challenge 1</h3>
     <h4>ISBN Validation</h4>
@@ -152,13 +163,11 @@ function coin_toss ($flips)
 
         if (mt_rand (0,1) == 0)
         {
-            echo "Heads";
-            //echo '<img src="img\/hw2\/heads.png\/">';
+            echo "<img src=\"img/hw2/heads.jpg\">";
         }
         else
         {
-            echo "Tails";
-            //echo '<img src="img\/hw2\/tails.png\/">';
+            echo "<img src=\"img/hw2/tails.jpg\">";
         }
     }  
 }
@@ -173,15 +182,19 @@ coin_toss (1);
 
 
 
-<!--CHALLENGE 2A ---------------------------------------------------->
+<!--
+
+CHALLENGE 2A ---------------------------------------------------
 
 <h4>A. 1, 3, 7, and 9 Flips.</i></h4>
 <p> 
 
 <?php
 
-//function coin_toss ()
-//{
+/*
+
+function coin_toss ()
+{
     do 
     {
        
@@ -210,16 +223,14 @@ coin_toss (1);
         }*/
 
 
-      
-//}
- 
-
 
 ?>
 </p>
 
 
-<!--CHALLENGE 2b ----------------------------------------------
+
+
+CHALLENGE 2b ----------------------------------------------
 
 <h4>B. Toss Until Two Heads In a Row</i></h4>
 <p>
@@ -230,7 +241,11 @@ coin_toss (1);
 
 
 
-?>-->
+?>
+
+-->
+
+</div>
     
 </body>
 </html>
