@@ -129,13 +129,47 @@ echo "$isbn";
 </p>
 
 
-<!-- CHALLENGE 2 --------------------------------------------------
+<!-- CHALLENGE 2 -------------------------------------------------- -->
 
 <h3>Challenge 2</h3>
 <h4>Coin Toss</i></h4>
+<p>
 
 
-CHALLENGE 2A --------------------------------------------------
+<?php
+
+/*
+0 = heads
+1 = tails
+*/
+
+
+function coin_toss ($flips)
+{
+    for ($i=1; $i<=$flips; $i++)
+    {
+       // $face= mt_rand (0,1);
+
+        if (mt_rand (0,1) == 0)
+        {
+            echo "Heads";
+            //echo '<img src="img\/hw2\/heads.png\/">';
+        }
+        else
+        {
+            echo "Tails";
+            //echo '<img src="img\/hw2\/tails.png\/">';
+        }
+    }  
+}
+
+
+coin_toss (3);
+
+
+?>
+
+<!--CHALLENGE 2A --------------------------------------------------
 
 <h4>A. 1, 3, 7, and 9 Flips.</i></h4>
 <p> 
