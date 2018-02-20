@@ -180,13 +180,14 @@ coin_toss (1);
 
 <?php
 
-function coin_toss ($flips)
-{
-    for ($i=1; $i<=$flips; $i++)
+//function coin_toss ()
+//{
+    do 
     {
+       
+        $count=0;   
         $face1= mt_rand (0,1);
         $face2= mt_rand (0,1);
-
 
         if ($face1 == 0)
         {
@@ -197,20 +198,21 @@ function coin_toss ($flips)
         {
             echo "Tails";
             //echo '<img src="img\/hw2\/tails.png\/">';
-        }
+    } while ($face1 == 0 && $face2 == 0);
 
 
-        while ($face1 == 0 && $face2 == 0)
+        /*while ($face1 == 0 && $face2 == 0)
         {
             echo "Heads";
             //'<img src="img\/hw2\/heads.png\/">';
 
-            
-        }
+            exit (Flipped two heads in a row in $count flips!)
+        }*/
 
-    }  
-}
 
+      
+//}
+ 
 
 
 ?>
@@ -222,13 +224,13 @@ function coin_toss ($flips)
 <h4>B. Toss Until Two Heads In a Row</i></h4>
 <p>
 
--->
+
 
 <?php
 
 
 
-?>
+?>-->
     
 </body>
 </html>
