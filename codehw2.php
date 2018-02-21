@@ -12,14 +12,18 @@
 
 <div class="topalign">
 <nav>
-<header><h1>LIS-638: Web Development</h1></header>
-    <ul>
-    <li><a href="index.html">About LIS-638</a></li>
-    <li><a href="codehw1.php">Homework 1</a></li>
-    <li class="selected"><a>Homework 2</a></li>
-    </ul>
+<header>
+<h2>LIS-638/SP18: Web Development</h2>
+<h3>Dr. Monica Macelli, Pratt Institute<br>
+Isabella Deocariza</h3><br>
+<h1>Code Homework</h1>
+</header>
+        <ul>
+        <li><a href="codehw1.php">1: Correct Change / 99 Bottles</a></li>
+        <li class="selected"><a>2: ISBN Validation / Coin Toss</a></li>
+        </ul>
 </nav>
-    </div>
+</div>
 
 <div class="content">
 
