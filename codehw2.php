@@ -27,17 +27,12 @@ Isabella Deocariza</h3><br>
 
 <div class="content">
 
-<h1>Code Homework 2</h1>
-
-
 
 <!-- CHALLENGE 1 -------------------------------------------------- -->
 
-
-    <h3>Challenge 1</h3>
-    <h4>ISBN Validation</h4>
-
-<p>
+<h3>Challenge 1: ISBN Validation</h3>
+<hr>
+<br>
 
 <?php
 
@@ -115,47 +110,44 @@ for ($i=0; $i<10; $i++)
 
 if ($totalSum % 11 == 0)
 {
-    echo "Number $isbn is a valid ISBN code.<p>";
+    echo "$isbn is the valid ISBN code of <a href=\"https://isbnsearch.org/isbn/1465459731\" target=\"_blank\">this title</a>. ";
 }
     else
     {
-        echo "Number $isbn is invalid.<p>";
+        echo "$isbn is not a valid ISBN code.<p>";
     }
-
-
-
 }
 
 
-$isbn = "0747532699";
+$isbn = "1465459731";
 
 isbn_validator($isbn);
-
-
-$isbn = "2345398237";
-
-isbn_validator($isbn);
-
-echo "$isbn";
 
 ?>
 
 
 </p>
+<p>&nbsp</p>
+<p>&nbsp</p>
 
 
-<!-- CHALLENGE 2 -------------------------------------------------- -->
 
-<h3>Challenge 2</h3>
-<h4>Coin Toss</i></h4>
-<p>
+
+
+<!-- CHALLENGE 2a -->
+<h3>Challenge 2a: Coin Toss <i>for 1, 3, 5, 7, and 9 flips</i></h3>
+<hr>
 
 
 <?php
 
+
 /*
-0 = heads
-1 = tails
+1. for loop
+    a. $i=1. i is the # of times the loop has completed, beginning at 1 (flip).
+    b. $i++. each iteration that the loop completes, i gains the value of 1.
+    c. $i<=$flips. i must be less than or equal to the number of flips defined in the function call, e.g. coin_toss (# here).
+2. tails is 0; heads is 1. 0/1 = F/T values
 */
 
 
@@ -163,32 +155,123 @@ function coin_toss ($flips)
 {
     for ($i=1; $i<=$flips; $i++)
     {
-       // $face= mt_rand (0,1);
 
-        if (mt_rand (0,1) == 0)
+        if (mt_rand (0,1))
         {
-            echo "<img src=\"img/hw2/heads.jpg\">";
+            echo "<div class=\"coin\"><img src=\"img/hw2/heads.jpg\"></div>";
         }
         else
         {
-            echo "<img src=\"img/hw2/tails.jpg\">";
+            echo "<div class=\"coin\"><img src=\"img/hw2/tails.jpg\"></div>";
         }
     }  
 }
-
-
-coin_toss (1);
-
-
 ?>
 
 
+<table>
+    <tr>
+        <td>
+            <h5>One flip!</h5>
+            <?php
+            coin_toss (1);
+            ?>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h5>Three flips!</h5>
+            <?php
+            coin_toss (3);
+            ?>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h5>Five flips!</h5>
+            <?php
+            coin_toss (5);
+            ?>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h5>Seven flips!</h5>
+            <?php
+            coin_toss (7);
+            ?>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <h5>Nine flips!</h5>
+            <?php
+            coin_toss (9);
+            ?>
+        </td>
+    </tr>
+</table>
+
+<p>&nbsp</p>
+<p>&nbsp</p>
 
 
 
-<!--
 
-CHALLENGE 2A ---------------------------------------------------
+
+<!-- CHALLENGE 2b  -->
+<h3>Challenge 2b: Coin Toss <i>until two heads in a row are flipped</i></h3>
+<hr>
+<br>
+
+<table>
+    <tr>
+        <td width=10%>
+            <?php
+
+            $headsCounter = 0;
+            $flipCounter = 0;
+
+            while ($headsCounter < 2) 
+                {
+                $flip = mt_rand(0,1);
+                $flipCounter++;
+
+            //if only runs if mt_rand outcome TRUE (1 or heads). ++ adds tp headsCounter
+
+                if ($flip)
+                    {
+                    $headsCounter++;
+                    echo "<div class=\"coin\"><img src=\"img/hw2/heads.jpg\"></div>";
+                    }
+
+            //else resets value of headsCounter to 0
+
+                else
+                    {
+                    $headsCounter = 0;
+                    echo "<div class=\"coin\"><img src=\"img/hw2/tails.jpg\"></div>";
+                    }
+
+            //loop runs again until if is true twice -- while above est. that loop terminates once headsCounter has reached 2
+
+                }
+            ?>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <?php
+                echo "<h5>Flipped two heads in a row in $flipCounter flips!</h5>";
+            ?>
+        </td>
+    </tr>
+</table>
+
+
+
+
+<!-- The crazy way I attempted Challenge 2 initially, then started over...
 
 <h4>A. 1, 3, 7, and 9 Flips.</i></h4>
 <p> 
@@ -230,22 +313,6 @@ function coin_toss ()
 
 ?>
 </p>
-
-
-
-
-CHALLENGE 2b ----------------------------------------------
-
-<h4>B. Toss Until Two Heads In a Row</i></h4>
-<p>
-
-
-
-<?php
-
-
-
-?>
 
 -->
 

@@ -92,6 +92,10 @@ nav h3 {
 
 /* CONTENT ------------------*/
 
+table, th, td {
+	width: 100%;
+}
+
 .content {
     position: relative;
     float: left;
@@ -100,7 +104,8 @@ nav h3 {
     max-width: 900px;
 }
 
-.image {
+.coin {
     position: relative;
     float: left;
+    padding-right: 1em;
 }
