@@ -26,8 +26,6 @@ Isabella Deocariza</h3><br>
 </div>
 
 <div class="content">
-
-
 <!-- CHALLENGE 1 -------------------------------------------------- -->
 
 <h3>Challenge 1: ISBN Validation</h3>
@@ -124,16 +122,12 @@ $isbn = "1465459731";
 isbn_validator($isbn);
 
 ?>
-
-
-</p>
-<p>&nbsp</p>
-<p>&nbsp</p>
+</div>
 
 
 
 
-
+<div class="content">
 <!-- CHALLENGE 2a -->
 <h3>Challenge 2a: Coin Toss <i>for 1, 3, 5, 7, and 9 flips</i></h3>
 <hr>
@@ -172,53 +166,69 @@ function coin_toss ($flips)
 <table>
     <tr>
         <td>
-            <h5>One flip!</h5>
+            <p>One flip!</p>
             <?php
             coin_toss (1);
             ?>
         </td>
     </tr>
+    <tr height=10px>
+        <td>
+            <hr style="height:1px; background-color:#c6c6c6; border:none;">
+        </td>
+    </tr>
     <tr>
         <td>
-            <h5>Three flips!</h5>
+            <p>Three flips!</p>
             <?php
             coin_toss (3);
             ?>
         </td>
     </tr>
+    <tr height=10px>
+        <td>
+            <hr style="height:1px; background-color:#c6c6c6; border:none;">
+        </td>
+    </tr>
     <tr>
         <td>
-            <h5>Five flips!</h5>
+            <p>Five flips!</p>
             <?php
             coin_toss (5);
             ?>
         </td>
     </tr>
+    <tr height=10px>
+        <td>
+            <hr style="height:1px; background-color:#c6c6c6; border:none;">
+        </td>
+    </tr>
     <tr>
         <td>
-            <h5>Seven flips!</h5>
+            <p>Seven flips!</p>
             <?php
             coin_toss (7);
             ?>
         </td>
     </tr>
+    <tr height=10px>
+        <td>
+            <hr style="height:1px; background-color:#c6c6c6; border:none;">
+        </td>
+    </tr>
     <tr>
         <td>
-            <h5>Nine flips!</h5>
+            <p>Nine flips!</p>
             <?php
             coin_toss (9);
             ?>
         </td>
     </tr>
 </table>
-
-<p>&nbsp</p>
-<p>&nbsp</p>
+</div>
 
 
-
-
-
+<div class="content">
 <!-- CHALLENGE 2b  -->
 <h3>Challenge 2b: Coin Toss <i>until two heads in a row are flipped</i></h3>
 <hr>
@@ -262,12 +272,12 @@ function coin_toss ($flips)
     <tr>
         <td>
             <?php
-                echo "<h5>Flipped two heads in a row in $flipCounter flips!</h5>";
+                echo "<p>Flipped two heads in a row in $flipCounter flips!</p>";
             ?>
         </td>
     </tr>
 </table>
-
+</div>
 
 
 
