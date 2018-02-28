@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8" />
-<title>Code Homework 1</title>
+<title>Code Homework 2</title>
 
 <link rel='stylesheet' type='text/css' href='style.css' />
     
@@ -14,13 +14,15 @@
 <nav>
 <header>
 <h2>LIS-638/SP18: Web Development</h2>
-<h3>Dr. Monica Macelli, Pratt Institute<br>
+<h3>Dr. Monica Maceli, Pratt Institute<br>
 Isabella Deocariza</h3><br>
 <h1>Code Homework</h1>
 </header>
         <ul>
         <li><a href="codehw1.php">1: Correct Change / 99 Bottles</a></li>
         <li class="selected"><a>2: ISBN Validation / Coin Toss</a></li>
+        <li><a href="inclass02-21.php">Arrays: In-Class Lab</a></li>
+        <li><a href="codehw3.php">Book List / Coin Toss, Continued</a></li>
         </ul>
 </nav>
 </div>
@@ -83,7 +85,7 @@ Isabella Deocariza</h3><br>
                 (10-$i)
                     Because the ISBN validation rules first multiply the first digit by 10, then the next by 9, then the next by 8, etc... so:
 
-                               array positions    0   2   3   4   5   6   6   7   8   9
+                               array positions    0   1   2   3   4   5   6   7   8   9
                                      with isbn    0   7   4   7   5   3   2   6   9   9
                     what they're multiplied by    10  9   8   7   6   5   4   3   2   1
 
