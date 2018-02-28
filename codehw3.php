@@ -48,26 +48,90 @@ $books = array
     array('Programming PHP', 'Kevin', 'Tatroe', 26, 'Paperback', 28.96),
     );
 
-
+$total_price=0;
 for ($i=0 ; $i < count($books); $i++)
     {
-    $total_price=0;
     $total_price=$total_price + $books[$i][5];
     }
 
 
+
 for ($i = 0; $i < count($books); $i++)
     {
-        for($c = 0; $c < count($books[$i]); $c++)
+        for($e = 0; $e < count($books[$i]); $e++)
             {
-            echo $books[$i][$c];
+            echo $books[$i][$e];
             echo "<p>";
             }
+      
     }
-
-echo $total_price;
+  echo $total_price;
 
 ?>
+
+
+
+<h3>Challenge 2: Coin Toss, Continued <i>until variable heads in a row are flipped</i></h3>
+<hr>
+<br>
+
+<table>
+        <tr>
+                    <td width=10%>
+                        <?php
+
+
+
+function coin_toss($heads)
+{
+
+                        $headsCounter = 0;
+                        $flipCounter = 0;
+
+                        while ($headsCounter < $heads) 
+                        {
+                            $flip = mt_rand(0,1);
+                            $flipCounter++;
+
+                        //if only runs if mt_rand outcome TRUE (1 or heads). ++ adds tp headsCounter
+
+                            if ($flip)
+                                {
+                                $headsCounter++;
+                                echo "<div class=\"coin\"><img src=\"img/hw2/heads.jpg\"></div>";
+                                }
+
+                        //else resets value of headsCounter to 0
+
+                            else
+                                {
+                                $headsCounter = 0;
+                                echo "<div class=\"coin\"><img src=\"img/hw2/tails.jpg\"></div>";
+                                }
+
+                        }
+                            echo "<p>Flipped $heads heads in a row in $flipCounter flips!</p>";
+                        
+
+                        //loop runs again until if is true twice -- while above est. that loop terminates once headsCounter has reached 2
+
+}
+
+coin_toss(8)
+?>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <?php
+                        ?>
+                    </td>
+                </tr>
+            </table>
+            </div>
+
+
+
 
 </div>
     
