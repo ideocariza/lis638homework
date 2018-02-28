@@ -22,7 +22,7 @@ Isabella Deocariza</h3><br>
         <li class="selected"><a>1: Correct Change / 99 Bottles</a></li>
         <li><a href="codehw2.php">2: ISBN Validation / Coin Toss</a></li>
         <li><a href="inclass02-21.php">Arrays: In-Class Lab</a></li>
-        <li><a href="codehw3.php">Book List / Coin Toss, Continued</a></li>
+        <li><a href="codehw3.php">3: Book Lists / Coin Toss, Continued</a></li>
         </ul>
 </nav>
 </div>

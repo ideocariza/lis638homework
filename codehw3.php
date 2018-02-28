@@ -23,7 +23,7 @@ Isabella Deocariza</h3><br>
         <li><a href="codehw1.php">1: Correct Change / 99 Bottles</a></li>
         <li><a href="codehw2.php">2: ISBN Validation / Coin Toss</a></li>
         <li><a href="inclass02-21.php">Arrays: In-Class Lab</a></li>
-        <li class="selected"><a>Book List / Coin Toss, Continued</a></li>
+        <li class="selected"><a>3: Book Lists / Coin Toss, Continued</a></li>
         </ul>
 </nav>
 </div>
@@ -34,7 +34,7 @@ Isabella Deocariza</h3><br>
 <hr>
 <br>
 
-
+<p>
 <?php
 
 
@@ -68,7 +68,7 @@ for ($i = 0; $i < count($books); $i++)
   echo $total_price;
 
 ?>
-
+</p>
 
 
 <h3>Challenge 2: Coin Toss, Continued <i>until variable heads in a row are flipped</i></h3>
